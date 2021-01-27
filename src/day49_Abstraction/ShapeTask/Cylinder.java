@@ -1,0 +1,42 @@
+package day49_Abstraction.ShapeTask;
+
+public final class Cylinder extends Shape implements Volume {
+    public double r, d, h;
+    public static double PI = 3.14;
+
+
+    public Cylinder(double r, double h) {
+        super("Cylinder");
+        if (r <= 0 || h <= 0) {
+            throw new RuntimeException("No such a cylinder with radius and height of " + r + " " + h);
+        }
+        this.r = r;
+        d = r * 2;
+        this.h = h;
+    }
+
+    @Override
+    public double area() {
+        return 2*PI *r*(r + h);
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * PI * r * h;
+    }
+
+    @Override
+    public double volume() {
+        return PI * r * r * h;
+    }
+
+    @Override
+    public String toString() {
+        return "Cylinder{" +
+                "r=" + r +
+                ", d=" + d +
+                ", h=" + h +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
