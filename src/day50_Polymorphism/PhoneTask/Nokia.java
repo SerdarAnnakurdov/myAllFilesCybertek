@@ -1,9 +1,8 @@
 package day50_Polymorphism.PhoneTask;
 
-public class Huwawei extends Phone{
-
-    public Huwawei( String model, String size, String color, double price) {
-        super("Huawai", model, size, color, price);
+public class Nokia extends Phone{
+    public Nokia( String model, String size, String color, double price) {
+        super("Nokia", model, size, color, price);
     }
 
     @Override
@@ -16,13 +15,14 @@ public class Huwawei extends Phone{
 
     }
 
-    public void SpyAction(){
-        System.out.println("Huwai Spy");
+    public void shanikDowya(){
+        System.out.println("Shanik dowya method");
     }
+
 
     @Override
     public String toString() {
-        return "Huwawei{" +
+        return "Nokia{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", size='" + size + '\'' +

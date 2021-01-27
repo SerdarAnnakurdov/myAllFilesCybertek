@@ -23,6 +23,10 @@ public final class Samsung extends Phone implements AndroidApps {
         System.out.println(model+" is calling");
     }
 
+    public void freeze(){
+        System.out.println("Samsung freezing all the time");
+    }
+
 
     @Override
     public String toString() {
