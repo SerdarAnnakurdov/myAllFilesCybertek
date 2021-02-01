@@ -34,6 +34,20 @@ public class QueuePractice {
         linkedList.add(null);
 
         System.out.println("linkedList = " + linkedList);
+
+
+        System.out.println("===============================================================");
+
+        Queue<Integer> priorityQueue = new PriorityQueue<>();
+        priorityQueue.addAll(Arrays.asList(1,10,12,91));
+        System.out.println("priorityQueue = " + priorityQueue);
+        priorityQueue.poll();
+        System.out.println("priorityQueue = " + priorityQueue);
+
+//        System.out.println(((PriorityQueue)priorityQueue).getFirst()); no rel thats why can use those methods
+//        priorityQueue.add(null); priorityQueue does not accept null ...
+                
+
         
 
     }
