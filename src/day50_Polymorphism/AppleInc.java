@@ -95,7 +95,7 @@ public class AppleInc {
         scrumMembers.forEach(each-> {if(each instanceof Tester) testers.add(each);else developers.add(each);});
 
 
-
+        System.out.println("HappyBirthDayAgalar");
 
 
 
